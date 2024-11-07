@@ -8,20 +8,31 @@
   list-style: none;
 }
 
-/*Style generic*/
+/*Style generic(start)*/
 .btn {
   border: none;
   background-color: transparent;
 }
 
-/*Style generic*/
+.carousel-container {
+  max-width: 1920px;
+  max-height: 560px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+/*Style generic(end)*/
 
 .container-major {
   display: grid;
   min-width: 375px;
 }
 
-/*Grid areas*/
+/*Grid areas(start)*/
 .header {
   grid-area: header;
 }
@@ -33,9 +44,9 @@
 .footer {
   grid-area: footer;
 }
-/*Grid areas*/
+/*Grid areas(end)*/
 
-/*Style header (start)*/
+/*header(start)*/
 .header-container {
   height: 100%;
   display: flex;
@@ -51,7 +62,75 @@
   display: flex;
   flex-direction: row;
 }
-/*Style header (end)*/
+/*header(end)*/
+
+/*main(start)*/
+.main-container {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/*section carousel(start)*/
+.carousel-slide {
+  width: 100%;
+  flex-grow: 2;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-slide::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-content {
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
+  background-color: #ccc;
+  font-size: 24px;
+  color: #333;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.carousel-controls {
+  width: 375px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.control-dots {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+/*section carousel(end)*/
+/*main(end)*/
 
 @media all and (min-width: 0) {
   .container-major {
@@ -67,6 +146,7 @@
     display: none;
   }
 
+  /*header(start)*/
   .header-container-logo {
     height: 36px;
 
@@ -85,21 +165,21 @@
       border-right: 1px solid rgba(10, 10, 10, 0.2);
     }
 
-    .container-logo-item:nth-child(1) > a > .item-img {
+    .container-logo-item:nth-child(1)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt0ec8e7392f212ae9/main_enabled.svg");
     }
 
-    .container-logo-item:nth-child(2) > a > .item-img {
+    .container-logo-item:nth-child(2)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt4c09611b59cb4ab4/sodimac_enabled.svg");
     }
 
-    .container-logo-item:nth-child(3) > a > .item-img {
+    .container-logo-item:nth-child(3)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
@@ -136,7 +216,7 @@
           gap: 6px;
         }
 
-        .btn-market > span {
+        .btn-market>span {
           display: block;
           width: 20.56px;
           height: 2px;
@@ -144,7 +224,7 @@
         }
       }
 
-      .menu-logo > a > .logo {
+      .menu-logo>a>.logo {
         width: 150px;
         height: 47px;
         background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt4c474b53ecc2a0ac/65e93b7882d68f0bd6d20cf9/falabella.com_green_icon_mobile.svg");
@@ -159,30 +239,30 @@
         justify-content: end;
         padding-right: 4%;
 
-        ul > div > li {
+        ul>div>li {
           display: flex;
         }
 
-        ul > div > li:nth-child(2) > i {
+        ul>div>li:nth-child(2)>i {
           width: 45px;
           height: 45px;
           background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt8edd02a0bba037a2/6571a9a264c9db92e936ab5f/Mobile_Cart_Grey.svg");
         }
       }
 
-      .container-session > ul,
-      .container-session > ul > div {
+      .container-session>ul,
+      .container-session>ul>div {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .container-session > ul > div {
+      .container-session>ul>div {
         gap: 8px;
       }
 
-      .container-session > ul > div > li:nth-child(1) {
+      .container-session>ul>div>li:nth-child(1) {
         text-decoration: underline;
       }
     }
@@ -197,14 +277,14 @@
         width: 96%;
       }
 
-      .item-input > input {
+      .item-input>input {
         width: 100%;
         height: 38px;
         border: 1px solid black;
         border-radius: 25px;
       }
 
-      .item-input > input::placeholder {
+      .item-input>input::placeholder {
         padding-left: 18px;
       }
 
@@ -239,6 +319,20 @@
       background-image: url("https://images.contentstack.io/v3/assets/blt7c5c2f2f888a7cc3/blt12bfc7a09b55ab55/6538d0cfd31953c6b30dbd57/gray_geofinder.svg");
     }
   }
+  /*header(end)*/
+
+  /*main(start)*/
+  /*section-carousel-container(start)*/
+  .section-carousel-container-movil {
+    display: flex;
+  }
+
+  .section-carousel-container-tablet-desktop {
+    display: none;
+  }
+  /*section-carousel-container(end)*/
+  /*main(end)*/
+
 }
 
 @media all and (min-width: 375px) {
@@ -255,6 +349,7 @@
     display: none;
   }
 
+  /*header(start)*/
   .header-container-logo {
     height: 36px;
 
@@ -273,21 +368,21 @@
       border-right: 1px solid rgba(10, 10, 10, 0.2);
     }
 
-    .container-logo-item:nth-child(1) > a > .item-img {
+    .container-logo-item:nth-child(1)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt0ec8e7392f212ae9/main_enabled.svg");
     }
 
-    .container-logo-item:nth-child(2) > a > .item-img {
+    .container-logo-item:nth-child(2)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt4c09611b59cb4ab4/sodimac_enabled.svg");
     }
 
-    .container-logo-item:nth-child(3) > a > .item-img {
+    .container-logo-item:nth-child(3)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
@@ -324,7 +419,7 @@
           gap: 6px;
         }
 
-        .btn-market > span {
+        .btn-market>span {
           display: block;
           width: 20.56px;
           height: 2px;
@@ -332,7 +427,7 @@
         }
       }
 
-      .menu-logo > a > .logo {
+      .menu-logo>a>.logo {
         width: 150px;
         height: 47px;
         background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt4c474b53ecc2a0ac/65e93b7882d68f0bd6d20cf9/falabella.com_green_icon_mobile.svg");
@@ -347,30 +442,30 @@
         justify-content: end;
         padding-right: 4%;
 
-        ul > div > li {
+        ul>div>li {
           display: flex;
         }
 
-        ul > div > li:nth-child(2) > i {
+        ul>div>li:nth-child(2)>i {
           width: 45px;
           height: 45px;
           background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt8edd02a0bba037a2/6571a9a264c9db92e936ab5f/Mobile_Cart_Grey.svg");
         }
       }
 
-      .container-session > ul,
-      .container-session > ul > div {
+      .container-session>ul,
+      .container-session>ul>div {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .container-session > ul > div {
+      .container-session>ul>div {
         gap: 8px;
       }
 
-      .container-session > ul > div > li:nth-child(1) {
+      .container-session>ul>div>li:nth-child(1) {
         text-decoration: underline;
       }
     }
@@ -385,14 +480,14 @@
         width: 96%;
       }
 
-      .item-input > input {
+      .item-input>input {
         width: 100%;
         height: 38px;
         border: 1px solid black;
         border-radius: 25px;
       }
 
-      .item-input > input::placeholder {
+      .item-input>input::placeholder {
         padding-left: 18px;
       }
 
@@ -427,6 +522,20 @@
       background-image: url("https://images.contentstack.io/v3/assets/blt7c5c2f2f888a7cc3/blt12bfc7a09b55ab55/6538d0cfd31953c6b30dbd57/gray_geofinder.svg");
     }
   }
+  /*header(end)*/
+
+  /*main(start)*/
+  /*section-carousel-container(start)*/
+  .section-carousel-container-movil {
+    display: flex;
+  }
+  
+  .section-carousel-container-tablet-desktop {
+    display: none;
+  }
+  /*section-carousel-container(end)*/
+  
+  /*main(end)*/
 }
 
 @media all and (min-width: 768px) {
@@ -443,6 +552,7 @@
     display: none;
   }
 
+  /*header(start)*/
   .header-container-logo {
     justify-content: start;
 
@@ -460,14 +570,14 @@
       border-right: 1px solid rgba(10, 10, 10, 0.2);
     }
 
-    .container-logo-item:nth-child(1) > a > .item-img {
+    .container-logo-item:nth-child(1) > a >.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt41977f5fb4360541/65e88caf5fd476794b74fa68/falabella.com_green_store_tab.svg");
     }
 
-    .container-logo-item:nth-child(2) > a > .item-img {
+    .container-logo-item:nth-child(2) > a >.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
@@ -499,6 +609,20 @@
     padding-left: 2%;
     border: solid rgb(248, 244, 244);
   }
+  /*header(end)*/
+
+  /*main(start)*/
+  /*section-carousel-container(start)*/
+  .section-carousel-container-movil {
+    display: none;
+  }
+
+  .section-carousel-container-tablet-desktop {
+    display: flex;
+  }
+  /*section-carousel-container(end)*/
+  /*main(end)*/
+
 }
 
 @media all and (min-width: 1024px) {
@@ -515,6 +639,7 @@
     display: none;
   }
 
+  /*header(start)*/
   .header-container-menu {
     height: 97px;
   }
@@ -522,6 +647,8 @@
   .header-container-location {
     height: 45px;
   }
+
+  /*header(end)*/
 }
 
 @media all and (min-width: 1025px) {
@@ -543,6 +670,7 @@
     flex-direction: column;
   }
 
+  /*header(start)*/
   .header-menu-search-session {
     flex-basis: 69px;
     display: flex;
@@ -559,7 +687,7 @@
         width: 100%;
       }
 
-      .anchor-home > div {
+      .anchor-home>div {
         width: 100%;
         height: 100%;
         background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt3ff00b170df30bfa/65e93b788b9c621a9e4703eb/falabella.com_green_icon.svg");
@@ -663,12 +791,12 @@
           display: flex;
           align-items: center;
 
-          div > a > span {
+          div>a>span {
             font-size: 20px;
           }
         }
 
-        li > div > a {
+        li>div>a {
           display: flex;
           flex-direction: column;
           text-decoration: none;
@@ -739,9 +867,13 @@
       }
     }
   }
+
+  /*header(end)*/
 }
 
 @media all and (min-width: 1280px) {
+
+  /*header(start)*/
   .header-menu-search-session {
 
     .logo-item {
@@ -772,9 +904,13 @@
       }
     }
   }
+
+  /*header(end)*/
 }
 
 @media all and (min-width: 1440px) {
+
+  /*header(start)*/
   .header-menu-search-session {
 
     .logo-item {
@@ -804,9 +940,13 @@
       }
     }
   }
+
+  /*header(end)*/
 }
 
 @media all and (min-width: 1680px) {
+
+  /*header(start)*/
   .header-menu-search-session {
 
     .logo-item {
@@ -825,4 +965,6 @@
       }
     }
   }
+
+  /*header(end)*/
 }
