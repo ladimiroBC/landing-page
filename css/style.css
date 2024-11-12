@@ -276,6 +276,7 @@
 /*section card product offer(start)*/
 .section-card-product-offer {
   max-width: 1280px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -315,6 +316,21 @@
   height: 100%;
 }
 /*section card product offer(end)*/
+
+/*section login shopping experience(start)*/
+.section-login-shopping-experience {
+  width: 100%;
+  height: 30vw;
+  margin-top: 30px;
+  background-color: #eee;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+ /*section login shopping experience(end)*/
+
 /*main(end)*/
 
 @media all and (min-width: 0) {
@@ -350,21 +366,21 @@
       border-right: 1px solid rgba(10, 10, 10, 0.2);
     }
 
-    .container-logo-item:nth-child(1)>a>.item-img {
+    .container-logo-item:nth-child(1) > a > .item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt0ec8e7392f212ae9/main_enabled.svg");
     }
 
-    .container-logo-item:nth-child(2)>a>.item-img {
+    .container-logo-item:nth-child(2) > a > .item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt4c09611b59cb4ab4/sodimac_enabled.svg");
     }
 
-    .container-logo-item:nth-child(3)>a>.item-img {
+    .container-logo-item:nth-child(3) > a > .item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
@@ -401,7 +417,7 @@
           gap: 6px;
         }
 
-        .btn-market>span {
+        .btn-market > span {
           display: block;
           width: 20.56px;
           height: 2px;
@@ -409,7 +425,7 @@
         }
       }
 
-      .menu-logo>a>.logo {
+      .menu-logo > a > .logo {
         width: 150px;
         height: 47px;
         background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt4c474b53ecc2a0ac/65e93b7882d68f0bd6d20cf9/falabella.com_green_icon_mobile.svg");
@@ -424,30 +440,30 @@
         justify-content: end;
         padding-right: 4%;
 
-        ul>div>li {
+        ul > div > li {
           display: flex;
         }
 
-        ul>div>li:nth-child(2)>i {
+        ul > div > li:nth-child(2) > i {
           width: 45px;
           height: 45px;
           background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt8edd02a0bba037a2/6571a9a264c9db92e936ab5f/Mobile_Cart_Grey.svg");
         }
       }
 
-      .container-session>ul,
-      .container-session>ul>div {
+      .container-session > ul,
+      .container-session > ul > div {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .container-session>ul>div {
+      .container-session > ul > div {
         gap: 8px;
       }
 
-      .container-session>ul>div>li:nth-child(1) {
+      .container-session > ul > div > li:nth-child(1) {
         text-decoration: underline;
       }
     }
@@ -462,14 +478,14 @@
         width: 96%;
       }
 
-      .item-input>input {
+      .item-input > input {
         width: 100%;
         height: 38px;
         border: 1px solid black;
         border-radius: 25px;
       }
 
-      .item-input>input::placeholder {
+      .item-input > input::placeholder {
         padding-left: 18px;
       }
 
@@ -575,6 +591,80 @@
     display: none;
   }
   /*section products offer(end)*/
+
+  /*section login shopping experience(start)*/
+  .login-shopping-experience-item {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .item-user-icon-container {
+    color: white;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(48, 236, 48);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-user-message-container {
+    width: 226px;
+  }
+
+  .message-paragraph {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .btn-login {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    width: 145px;
+    height: 26px;
+    border-radius: 15px;
+    background-color: #343434;
+  }
+
+  .btn-signup {
+    color: #495867;
+    font-size: 14px;
+    font-weight: 600;
+    width: 145px;
+    height: 26px;
+    border: 2px solid #495867;
+    border-radius: 15px;
+  }
+  /*section login shopping experience(end)*/
+
+  /*section brand advertising(start)*/
+  .section-brand-advertising {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .brand-advertising-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .container-item-img {
+    width: 48%;
+    height: 48%;
+  }
+  /*section brand advertising(end)*/
   /*main(end)*/
 
 }
@@ -612,21 +702,21 @@
       border-right: 1px solid rgba(10, 10, 10, 0.2);
     }
 
-    .container-logo-item:nth-child(1)>a>.item-img {
+    .container-logo-item:nth-child(1) > a > .item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt0ec8e7392f212ae9/main_enabled.svg");
     }
 
-    .container-logo-item:nth-child(2)>a>.item-img {
+    .container-logo-item:nth-child(2) > a > .item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt4c09611b59cb4ab4/sodimac_enabled.svg");
     }
 
-    .container-logo-item:nth-child(3)>a>.item-img {
+    .container-logo-item:nth-child(3) > a > .item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
@@ -663,7 +753,7 @@
           gap: 6px;
         }
 
-        .btn-market>span {
+        .btn-market > span {
           display: block;
           width: 20.56px;
           height: 2px;
@@ -671,7 +761,7 @@
         }
       }
 
-      .menu-logo>a>.logo {
+      .menu-logo > a > .logo {
         width: 150px;
         height: 47px;
         background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt4c474b53ecc2a0ac/65e93b7882d68f0bd6d20cf9/falabella.com_green_icon_mobile.svg");
@@ -686,30 +776,30 @@
         justify-content: end;
         padding-right: 4%;
 
-        ul>div>li {
+        ul > div > li {
           display: flex;
         }
 
-        ul>div>li:nth-child(2)>i {
+        ul > div > li:nth-child(2) > i {
           width: 45px;
           height: 45px;
           background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt8edd02a0bba037a2/6571a9a264c9db92e936ab5f/Mobile_Cart_Grey.svg");
         }
       }
 
-      .container-session>ul,
-      .container-session>ul>div {
+      .container-session > ul,
+      .container-session > ul > div {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .container-session>ul>div {
+      .container-session > ul > div {
         gap: 8px;
       }
 
-      .container-session>ul>div>li:nth-child(1) {
+      .container-session > ul > div > li:nth-child(1) {
         text-decoration: underline;
       }
     }
@@ -724,14 +814,14 @@
         width: 96%;
       }
 
-      .item-input>input {
+      .item-input > input {
         width: 100%;
         height: 38px;
         border: 1px solid black;
         border-radius: 25px;
       }
 
-      .item-input>input::placeholder {
+      .item-input > input::placeholder {
         padding-left: 18px;
       }
 
@@ -813,6 +903,79 @@
   }
   /*section products offer(end)*/
 
+  /*section login shopping experience(start)*/
+  .login-shopping-experience-item {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .item-user-icon-container {
+    color: white;
+    width: 35px;
+    height: 35px;
+    background-color: rgb(48, 236, 48);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-user-message-container {
+    width: 226px;
+  }
+
+  .message-paragraph {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .btn-login {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    width: 145px;
+    height: 26px;
+    border-radius: 15px;
+    background-color: #343434;
+  }
+
+  .btn-signup {
+    color: #495867;
+    font-size: 14px;
+    font-weight: 600;
+    width: 145px;
+    height: 26px;
+    border: 2px solid #495867;
+    border-radius: 15px;
+  }
+  /*section login shopping experience(end)*/
+
+  /*section brand advertising(start)*/
+  .section-brand-advertising {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .brand-advertising-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .container-item-img {
+    width: 48%;
+    height: 48%;
+  }
+  /*section brand advertising(end)*/
   /*main(end)*/
 }
 
@@ -930,8 +1093,12 @@
   /*section popular products(end)*/
 
   /*section products offer(start)*/
+  .section-card-product-offer {
+    width: 96%;
+  }
+
   .section-card-product-offer-tittle {
-    width: 100%;
+    width: 99%;
     flex: 0 0 60px;
     display: flex;
     justify-content: center;
@@ -955,7 +1122,6 @@
     }
   }
   
-  
   .section-card-product-offer-movil {
     display: none;
   }
@@ -967,6 +1133,7 @@
   }
 
   .product-offer-container {
+    width: 98%;
     flex-wrap: nowrap;
     justify-content: flex-start;
     gap: 8px;
@@ -978,23 +1145,134 @@
   
   .product-offer-container > .container-card-item:nth-child(2),
   .product-offer-container > .container-card-item:nth-child(3) {
-    flex: 0 0 24.7%;
+    flex: 0 0 25%;
   }
   
   .product-offer-container:nth-of-type(even) > .container-card-item:nth-child(1),
   .product-offer-container:nth-of-type(even) > .container-card-item:nth-child(2) {
-    flex: 0 0 24.7%;
+    flex: 0 0 25%;
   }
   
   .product-offer-container:nth-of-type(even) > .container-card-item:nth-child(3) {
     flex: 0 0 50%;
   }
-  
+
+  .product-offer-container:nth-child(2) > .container-card-item:nth-child(3) .card-item-img {
+    width: 99%;
+  }
+
+  .product-offer-container:nth-child(4) > .container-card-item:nth-child(3) .card-item-img {
+    width: 99%;
+  }
+
   .card-item-img {
-    width: 100%;
-    height: 100%;
+    width: 98%;
+    height: 98%;
   }
   /*section products offer(end)*/
+
+  /*section login shopping experience(start)*/
+  .section-login-shopping-experience {
+    width: 96vw;
+    height: 12vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  
+  .login-shopping-experience-item {
+    width: 98%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .login-shopping-experience-item:nth-child(1) {
+    width: 60vw;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-shopping-experience-item:nth-child(2) {
+    width: 32vw;
+    height: 56px;
+  }
+
+  .item-user-icon-container {
+    color: white;
+    width: 52px;
+    height: 52px;
+    background-color: rgb(48, 236, 48);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-user-message-container {
+    width: auto;
+  }
+
+  .message-paragraph {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .btn-login {
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    width: 120px;
+    height: 42px;
+    border-radius: 20px;
+    background-color: #343434;
+  }
+
+  .btn-signup {
+    cursor: pointer;
+    color: #495867;
+    font-size: 16px;
+    font-weight: 600;
+    width: 120px;
+    height: 42px;
+    border: 2px solid #495867;
+    border-radius: 20px;
+    background: #fff;
+  }
+  /*section login shopping experience(end)*/
+
+  /*section brand advertising(start)*/
+  .section-brand-advertising {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .brand-advertising-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .container-item-img {
+    width: 23.5%;
+    height: 23.5%;
+  }
+  /*section brand advertising(end)*/
   /*main(end)*/
 }
 
@@ -1275,7 +1553,6 @@
       }
     }
   }
-
   /*header(end)*/
 }
 
@@ -1311,8 +1588,126 @@
       }
     }
   }
-
   /*header(end)*/
+
+  /*main(start)*/
+  /*section products offer(start)*/
+  .section-card-product-offer-tablet,
+  .section-card-product-offer-tittle,
+  .product-offer-container {
+    width: 1280px;
+  }
+
+  .product-offer-container:nth-child(2) > .container-card-item:nth-child(3) .card-item-img {
+    width: 97.5%;
+  }
+
+  .product-offer-container:nth-child(4) > .container-card-item:nth-child(3) .card-item-img {
+    width: 97.5%;
+  }
+
+  .card-item-img {
+    width: 95%;
+    height: 95%;
+  }
+  /*section products offer(end)*/
+
+  /*section login shopping experience(start)*/
+  .section-login-shopping-experience {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  
+  .login-shopping-experience-item {
+    width: 98%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .login-shopping-experience-item:nth-child(1) {
+    height: 56px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    gap: 20px;
+  }
+
+  .login-shopping-experience-item:nth-child(2) {
+    width: 361px;
+    height: 42px;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+  .item-user-icon-container {
+    color: white;
+    width: 52px;
+    height: 52px;
+    background-color: rgb(48, 236, 48);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item-user-message-container {
+    width: auto;
+  }
+
+  .message-paragraph {
+    color: #333;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 27px;
+  }
+
+  .btn-login {
+    width: 170px;
+    height: 42px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #343434;
+  }
+
+  .btn-signup {
+    width: 170px;
+    height: 42px;
+    cursor: pointer;
+    color: #495867;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #495867;
+    border-radius: 20px;
+  }
+  /*section login shopping experience(end)*/
+
+  /*section brand advertising(start)*/
+  .brand-advertising-container {
+    max-width: 1280px;
+  }
+
+  .container-item-img {
+    width: 24.5%;
+    height: 24.5%;
+  }
+  /*section brand advertising(end)*/
+  /*main(end)*/
 }
 
 @media all and (min-width: 1680px) {
