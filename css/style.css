@@ -403,6 +403,43 @@
 }
 /*section credits fallabela(end)*/
 
+/*section register sell fallabela(start)*/
+.section-register-sell-fallabela {
+  max-width: 1280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: auto;
+}
+
+.sell-fallabela-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-background-image {
+  width: 96%;
+  display: flex;
+  flex-grow: 1;
+
+  .image-link-movil {
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .image-link-tablet-desktop {
+    display: none;
+  }
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+}
+/*section register sell fallabela(end)*/
 /*main(end)*/
 
 @media all and (min-width: 0) {
@@ -738,7 +775,6 @@
   }
   /*section brand advertising(end)*/
   /*main(end)*/
-
 }
 
 @media all and (min-width: 375px) {
@@ -1075,7 +1111,6 @@
     height: 34px;
   }
   /*section credits fallabela(end)*/
-
   /*main(end)*/
 }
 
@@ -1374,6 +1409,18 @@
   }
   /*section brand advertising(end)*/
 
+  /*section register sell fallabela(start)*/
+  .image-link-movil {
+    display: none;
+  }
+  .container-background-image {
+    width: 98%;
+    
+    .image-link-tablet-desktop {
+      display: flex;
+    }  
+  }
+  /*section register sell fallabela(end)*/
   /*main(end)*/
 }
 
@@ -1808,6 +1855,14 @@
     height: 24.5%;
   }
   /*section brand advertising(end)*/
+
+  
+  /*section register sell fallabela(start)*/
+  .container-background-image {
+    width: 100%;
+  }
+  /*section register sell fallabela(end)*/
+  
   /*main(end)*/
 }
 
