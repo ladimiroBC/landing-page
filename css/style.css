@@ -13,6 +13,7 @@
   border: none;
   background-color: transparent;
 }
+
 /*Style generic(end)*/
 
 .container-major {
@@ -32,6 +33,7 @@
 .footer {
   grid-area: footer;
 }
+
 /*Grid areas(end)*/
 
 /*header(start)*/
@@ -50,6 +52,7 @@
   display: flex;
   flex-direction: row;
 }
+
 /*header(end)*/
 
 /*main(start)*/
@@ -128,6 +131,7 @@
 .dot.active {
   background-color: #333;
 }
+
 /*section carousel(end)*/
 
 /*section popular products(start)*/
@@ -250,7 +254,7 @@
   font-weight: 600;
 }
 
-.card-body > .body-container-item:nth-child(3) {
+.card-body>.body-container-item:nth-child(3) {
   padding-top: 3px;
   display: flex;
   align-items: center;
@@ -276,6 +280,7 @@
     }
   }
 }
+
 /*section popular products(end)*/
 
 /*section card product offer(start)*/
@@ -320,6 +325,7 @@
   width: 100%;
   height: 100%;
 }
+
 /*section card product offer(end)*/
 
 /*section login shopping experience(start)*/
@@ -334,6 +340,7 @@
   justify-content: center;
   gap: 8px;
 }
+
 /*section login shopping experience(end)*/
 
 /*section credits fallabela(start)*/
@@ -359,7 +366,7 @@
   position: absolute;
 }
 
-.cards-slide-credits{
+.cards-slide-credits {
   width: 100%;
   height: 100%;
   padding-left: 15px;
@@ -401,6 +408,7 @@
     text-decoration: underline;
   }
 }
+
 /*section credits fallabela(end)*/
 
 /*section register sell fallabela(start)*/
@@ -439,7 +447,44 @@
   width: 100%;
   height: 100%;
 }
+
 /*section register sell fallabela(end)*/
+
+/*section fallabela actions(start)*/
+.section-fallabela-actions {
+  max-width: 1280px;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fallabela-actions-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.container-card-img-item {
+  width: 100px;
+  height: 100px;
+  display: flex;
+}
+
+.card-span-item {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1rem;
+  text-decoration: underline;
+  color: #333;
+}
+
+/*section fallabela actions(end)*/
 /*main(end)*/
 
 @media all and (min-width: 0) {
@@ -475,21 +520,21 @@
       border-right: 1px solid rgba(10, 10, 10, 0.2);
     }
 
-    .container-logo-item:nth-child(1) > a > .item-img {
+    .container-logo-item:nth-child(1)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt0ec8e7392f212ae9/main_enabled.svg");
     }
 
-    .container-logo-item:nth-child(2) > a > .item-img {
+    .container-logo-item:nth-child(2)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt4c09611b59cb4ab4/sodimac_enabled.svg");
     }
 
-    .container-logo-item:nth-child(3) > a > .item-img {
+    .container-logo-item:nth-child(3)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
@@ -526,7 +571,7 @@
           gap: 6px;
         }
 
-        .btn-market > span {
+        .btn-market>span {
           display: block;
           width: 20.56px;
           height: 2px;
@@ -534,7 +579,7 @@
         }
       }
 
-      .menu-logo > a > .logo {
+      .menu-logo>a>.logo {
         width: 150px;
         height: 47px;
         background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt4c474b53ecc2a0ac/65e93b7882d68f0bd6d20cf9/falabella.com_green_icon_mobile.svg");
@@ -549,30 +594,30 @@
         justify-content: end;
         padding-right: 4%;
 
-        ul > div > li {
+        ul>div>li {
           display: flex;
         }
 
-        ul > div > li:nth-child(2) > i {
+        ul>div>li:nth-child(2)>i {
           width: 45px;
           height: 45px;
           background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt8edd02a0bba037a2/6571a9a264c9db92e936ab5f/Mobile_Cart_Grey.svg");
         }
       }
 
-      .container-session > ul,
-      .container-session > ul > div {
+      .container-session>ul,
+      .container-session>ul>div {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .container-session > ul > div {
+      .container-session>ul>div {
         gap: 8px;
       }
 
-      .container-session > ul > div > li:nth-child(1) {
+      .container-session>ul>div>li:nth-child(1) {
         text-decoration: underline;
       }
     }
@@ -587,14 +632,14 @@
         width: 96%;
       }
 
-      .item-input > input {
+      .item-input>input {
         width: 100%;
         height: 38px;
         border: 1px solid black;
         border-radius: 25px;
       }
 
-      .item-input > input::placeholder {
+      .item-input>input::placeholder {
         padding-left: 18px;
       }
 
@@ -629,6 +674,7 @@
       background-image: url("https://images.contentstack.io/v3/assets/blt7c5c2f2f888a7cc3/blt12bfc7a09b55ab55/6538d0cfd31953c6b30dbd57/gray_geofinder.svg");
     }
   }
+
   /*header(end)*/
 
   /*main(start)*/
@@ -640,6 +686,7 @@
   .section-carousel-container-tablet-desktop {
     display: none;
   }
+
   /*section-carousel-container(end)*/
 
   /*section popular products(start)*/
@@ -664,6 +711,7 @@
   .container-carousel-controls-popular-products-tablet {
     display: none;
   }
+
   /*section popular products(end)*/
 
   /*section products offer(start)*/
@@ -673,17 +721,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     .tittle-span-one {
       font-size: 20px;
       font-weight: 800;
       letter-spacing: 1px;
     }
-  
+
     .tittle-span-two {
       font-size: 14px;
     }
-  
+
     .tittle-span-three {
       font-size: 14px;
       color: rgb(61, 220, 61);
@@ -691,7 +739,7 @@
       letter-spacing: 1px;
     }
   }
-  
+
   .section-card-product-offer-movil {
     display: flex;
   }
@@ -699,6 +747,7 @@
   .section-card-product-offer-tablet {
     display: none;
   }
+
   /*section products offer(end)*/
 
   /*section login shopping experience(start)*/
@@ -752,6 +801,7 @@
     border: 2px solid #495867;
     border-radius: 15px;
   }
+
   /*section login shopping experience(end)*/
 
   /*section brand advertising(start)*/
@@ -773,7 +823,51 @@
     width: 48%;
     height: 48%;
   }
+
   /*section brand advertising(end)*/
+
+  /*section fallabela actions(start)*/
+  .action-container-card:nth-child(1),
+  .action-container-card:nth-child(2) {
+    cursor: pointer;
+    flex: 0 0 100px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-container-card:nth-child(3),
+  .action-container-card:nth-child(4),
+  .action-container-card:nth-child(5) {
+    cursor: pointer;
+    flex: 0 0 100px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .action-container-card:nth-child(3) {
+    padding-top: 4px;
+  }
+
+
+  .action-container-card:nth-child(2) {
+    margin-left: 8px;
+  }
+
+  .image-item-action-movil {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-item-action-desktop {
+    display: none;
+  }
+  /*section fallabela actions(end)*/
+
   /*main(end)*/
 }
 
@@ -810,21 +904,21 @@
       border-right: 1px solid rgba(10, 10, 10, 0.2);
     }
 
-    .container-logo-item:nth-child(1) > a > .item-img {
+    .container-logo-item:nth-child(1)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt0ec8e7392f212ae9/main_enabled.svg");
     }
 
-    .container-logo-item:nth-child(2) > a > .item-img {
+    .container-logo-item:nth-child(2)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt7c5c2f2f888a7cc3/blt4c09611b59cb4ab4/sodimac_enabled.svg");
     }
 
-    .container-logo-item:nth-child(3) > a > .item-img {
+    .container-logo-item:nth-child(3)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
@@ -861,7 +955,7 @@
           gap: 6px;
         }
 
-        .btn-market > span {
+        .btn-market>span {
           display: block;
           width: 20.56px;
           height: 2px;
@@ -869,7 +963,7 @@
         }
       }
 
-      .menu-logo > a > .logo {
+      .menu-logo>a>.logo {
         width: 150px;
         height: 47px;
         background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt4c474b53ecc2a0ac/65e93b7882d68f0bd6d20cf9/falabella.com_green_icon_mobile.svg");
@@ -884,30 +978,30 @@
         justify-content: end;
         padding-right: 4%;
 
-        ul > div > li {
+        ul>div>li {
           display: flex;
         }
 
-        ul > div > li:nth-child(2) > i {
+        ul>div>li:nth-child(2)>i {
           width: 45px;
           height: 45px;
           background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt8edd02a0bba037a2/6571a9a264c9db92e936ab5f/Mobile_Cart_Grey.svg");
         }
       }
 
-      .container-session > ul,
-      .container-session > ul > div {
+      .container-session>ul,
+      .container-session>ul>div {
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
 
-      .container-session > ul > div {
+      .container-session>ul>div {
         gap: 8px;
       }
 
-      .container-session > ul > div > li:nth-child(1) {
+      .container-session>ul>div>li:nth-child(1) {
         text-decoration: underline;
       }
     }
@@ -922,14 +1016,14 @@
         width: 96%;
       }
 
-      .item-input > input {
+      .item-input>input {
         width: 100%;
         height: 38px;
         border: 1px solid black;
         border-radius: 25px;
       }
 
-      .item-input > input::placeholder {
+      .item-input>input::placeholder {
         padding-left: 18px;
       }
 
@@ -964,6 +1058,7 @@
       background-image: url("https://images.contentstack.io/v3/assets/blt7c5c2f2f888a7cc3/blt12bfc7a09b55ab55/6538d0cfd31953c6b30dbd57/gray_geofinder.svg");
     }
   }
+
   /*header(end)*/
 
   /*main(start)*/
@@ -971,10 +1066,11 @@
   .section-carousel-container-movil {
     display: flex;
   }
-  
+
   .section-carousel-container-tablet-desktop {
     display: none;
   }
+
   /*section-carousel-container(end)*/
 
   /*section popular products(start)*/
@@ -999,6 +1095,7 @@
   .container-carousel-controls-popular-products-tablet {
     display: none;
   }
+
   /*section popular products(end)*/
 
   /*section products offer(start)*/
@@ -1009,6 +1106,7 @@
   .section-card-product-offer-tablet {
     display: none;
   }
+
   /*section products offer(end)*/
 
   /*section login shopping experience(start)*/
@@ -1062,6 +1160,7 @@
     border: 2px solid #495867;
     border-radius: 15px;
   }
+
   /*section login shopping experience(end)*/
 
   /*section brand advertising(start)*/
@@ -1083,6 +1182,7 @@
     width: 48%;
     height: 48%;
   }
+
   /*section brand advertising(end)*/
 
   /*section credits fallabela(start)*/
@@ -1095,13 +1195,13 @@
     width: 247px;
     height: 300px;
   }
-  
+
   .content-card-img {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .card-img-item {
     width: 227px;
     height: 226.55px;
@@ -1110,7 +1210,25 @@
   .content-card-body {
     height: 34px;
   }
+
   /*section credits fallabela(end)*/
+
+  /*section fallabela actions(start)*/
+  .action-container-card:nth-child(2) {
+    margin-left: 8px;
+  }
+
+  .image-item-action-movil {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-item-action-desktop {
+    display: none;
+  }
+
+  /*section fallabela actions(end)*/
   /*main(end)*/
 }
 
@@ -1146,21 +1264,21 @@
       border-right: 1px solid rgba(10, 10, 10, 0.2);
     }
 
-    .container-logo-item:nth-child(1) > a > .item-img {
+    .container-logo-item:nth-child(1)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/blt41977f5fb4360541/65e88caf5fd476794b74fa68/falabella.com_green_store_tab.svg");
     }
 
-    .container-logo-item:nth-child(2) > a > .item-img {
+    .container-logo-item:nth-child(2)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
       background-image: url("https://images.falabella.com/v3/assets/blt088e6fffbba20f16/bltccc5a7e27f9cab2f/6418aba238ab2c1b60a4bc29/logo-homecenter-our-stores.svg");
     }
 
-    .container-logo-item:nth-child(3) > a > .item-img {
+    .container-logo-item:nth-child(3)>a>.item-img {
       height: 36px;
       background-position: 50%;
       background-repeat: no-repeat;
@@ -1173,7 +1291,7 @@
       padding-left: 1%;
     }
 
-    .container-menu > .container-session {
+    .container-menu>.container-session {
       padding-right: 3%;
     }
   }
@@ -1185,6 +1303,7 @@
     padding-left: 2%;
     border: solid rgb(248, 244, 244);
   }
+
   /*header(end)*/
 
   /*main(start)*/
@@ -1196,6 +1315,7 @@
   .section-carousel-container-tablet-desktop {
     display: flex;
   }
+
   /*section-carousel-container(end)*/
 
   /*section popular products(start)*/
@@ -1207,7 +1327,7 @@
     height: 30px;
     padding-left: 15px;
   }
-  
+
   .container-carousel-popular-products-item,
   .item-container-carousel-products {
     height: 376px;
@@ -1225,6 +1345,7 @@
     justify-content: center;
     margin-top: 5px;
   }
+
   /*section popular products(end)*/
 
   /*section products offer(start)*/
@@ -1238,17 +1359,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     .tittle-span-one {
       font-size: 30px;
       font-weight: 800;
       letter-spacing: 1px;
     }
-  
+
     .tittle-span-two {
       font-size: 25px;
     }
-  
+
     .tittle-span-three {
       font-size: 25px;
       color: rgb(61, 220, 61);
@@ -1256,7 +1377,7 @@
       letter-spacing: 1px;
     }
   }
-  
+
   .section-card-product-offer-movil {
     display: none;
   }
@@ -1274,29 +1395,29 @@
     gap: 8px;
   }
 
-  .product-offer-container > .container-card-item:nth-child(1) {
-    flex: 0 0 50%;
-  }
-  
-  .product-offer-container > .container-card-item:nth-child(2),
-  .product-offer-container > .container-card-item:nth-child(3) {
-    flex: 0 0 25%;
-  }
-  
-  .product-offer-container:nth-of-type(even) > .container-card-item:nth-child(1),
-  .product-offer-container:nth-of-type(even) > .container-card-item:nth-child(2) {
-    flex: 0 0 25%;
-  }
-  
-  .product-offer-container:nth-of-type(even) > .container-card-item:nth-child(3) {
+  .product-offer-container>.container-card-item:nth-child(1) {
     flex: 0 0 50%;
   }
 
-  .product-offer-container:nth-child(2) > .container-card-item:nth-child(3) .card-item-img {
+  .product-offer-container>.container-card-item:nth-child(2),
+  .product-offer-container>.container-card-item:nth-child(3) {
+    flex: 0 0 25%;
+  }
+
+  .product-offer-container:nth-of-type(even)>.container-card-item:nth-child(1),
+  .product-offer-container:nth-of-type(even)>.container-card-item:nth-child(2) {
+    flex: 0 0 25%;
+  }
+
+  .product-offer-container:nth-of-type(even)>.container-card-item:nth-child(3) {
+    flex: 0 0 50%;
+  }
+
+  .product-offer-container:nth-child(2)>.container-card-item:nth-child(3) .card-item-img {
     width: 99%;
   }
 
-  .product-offer-container:nth-child(4) > .container-card-item:nth-child(3) .card-item-img {
+  .product-offer-container:nth-child(4)>.container-card-item:nth-child(3) .card-item-img {
     width: 99%;
   }
 
@@ -1304,6 +1425,7 @@
     width: 98%;
     height: 98%;
   }
+
   /*section products offer(end)*/
 
   /*section login shopping experience(start)*/
@@ -1319,8 +1441,8 @@
     align-items: center;
     gap: 8px;
   }
-  
-  
+
+
   .login-shopping-experience-item {
     width: 98%;
     margin: 0;
@@ -1386,6 +1508,7 @@
     border-radius: 20px;
     background: #fff;
   }
+
   /*section login shopping experience(end)*/
 
   /*section brand advertising(start)*/
@@ -1407,20 +1530,70 @@
     width: 23.5%;
     height: 23.5%;
   }
+
   /*section brand advertising(end)*/
 
   /*section register sell fallabela(start)*/
   .image-link-movil {
     display: none;
   }
+
   .container-background-image {
     width: 98%;
-    
+
     .image-link-tablet-desktop {
       display: flex;
-    }  
+    }
   }
+
   /*section register sell fallabela(end)*/
+
+  /*section fallabela actions(start)*/
+  .fallabela-actions-container {
+    gap: 12px;
+  }
+  
+  .action-container-card:nth-child(3) {
+    padding-top: 0;
+  }
+  
+  .action-container-card:nth-of-type(even) {
+    flex: 0 0 10%;
+    height: auto;
+  }
+
+  .action-container-card:nth-of-type(odd) {
+    flex: 0 0 10%;
+    height: auto;
+  }
+
+  .action-container-card:hover {
+    .card-span-item {
+      text-decoration: underline;
+    }
+  }
+
+  .image-item-action-movil {
+    display: none;
+
+  }
+
+  .image-item-action-desktop {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-span-item {
+    padding-top: 8px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #333;
+  }
+  /*section fallabela actions(end)*/
+
   /*main(end)*/
 }
 
@@ -1446,6 +1619,7 @@
   .header-container-location {
     height: 45px;
   }
+
   /*header(end)*/
 }
 
@@ -1701,6 +1875,7 @@
       }
     }
   }
+
   /*header(end)*/
 }
 
@@ -1736,6 +1911,7 @@
       }
     }
   }
+
   /*header(end)*/
 
   /*main(start)*/
@@ -1746,11 +1922,11 @@
     width: 1280px;
   }
 
-  .product-offer-container:nth-child(2) > .container-card-item:nth-child(3) .card-item-img {
+  .product-offer-container:nth-child(2)>.container-card-item:nth-child(3) .card-item-img {
     width: 97.5%;
   }
 
-  .product-offer-container:nth-child(4) > .container-card-item:nth-child(3) .card-item-img {
+  .product-offer-container:nth-child(4)>.container-card-item:nth-child(3) .card-item-img {
     width: 97.5%;
   }
 
@@ -1758,6 +1934,7 @@
     width: 95%;
     height: 95%;
   }
+
   /*section products offer(end)*/
 
   /*section login shopping experience(start)*/
@@ -1773,8 +1950,8 @@
     align-items: center;
     gap: 8px;
   }
-  
-  
+
+
   .login-shopping-experience-item {
     width: 98%;
     margin: 0;
@@ -1843,6 +2020,7 @@
     border: 2px solid #495867;
     border-radius: 20px;
   }
+
   /*section login shopping experience(end)*/
 
   /*section brand advertising(start)*/
@@ -1854,15 +2032,17 @@
     width: 24.5%;
     height: 24.5%;
   }
+
   /*section brand advertising(end)*/
 
-  
+
   /*section register sell fallabela(start)*/
   .container-background-image {
     width: 100%;
   }
+
   /*section register sell fallabela(end)*/
-  
+
   /*main(end)*/
 }
 
