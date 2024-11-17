@@ -2189,6 +2189,7 @@ footer {
           align-items: center;
 
           div > a > span {
+            color:#495867;
             font-size: 20px;
           }
         }
